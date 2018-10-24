@@ -13,6 +13,7 @@
 		F8D3047E21801B70009E4044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D3047D21801B70009E4044 /* Assets.xcassets */; };
 		F8D3048121801B70009E4044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8D3047F21801B70009E4044 /* LaunchScreen.storyboard */; };
 		F8D3048421801B70009E4044 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D3048321801B70009E4044 /* main.m */; };
+		F8D3048C21801C5C009E4044 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = F8D3048B21801C5C009E4044 /* Song.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		F8D3048021801B70009E4044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8D3048221801B70009E4044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8D3048321801B70009E4044 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8D3048A21801C5C009E4044 /* Song.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		F8D3048B21801C5C009E4044 /* Song.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				F8D3047F21801B70009E4044 /* LaunchScreen.storyboard */,
 				F8D3048221801B70009E4044 /* Info.plist */,
 				F8D3048321801B70009E4044 /* main.m */,
+				F8D3048A21801C5C009E4044 /* Song.h */,
+				F8D3048B21801C5C009E4044 /* Song.m */,
 			);
 			path = LyricFinder;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8D3048C21801C5C009E4044 /* Song.m in Sources */,
 				F8D3047921801B70009E4044 /* ViewController.m in Sources */,
 				F8D3048421801B70009E4044 /* main.m in Sources */,
 				F8D3047621801B6F009E4044 /* AppDelegate.m in Sources */,
