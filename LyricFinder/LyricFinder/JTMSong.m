@@ -6,9 +6,9 @@
 //  Copyright © 2018 Jonathan T. Miles. All rights reserved.
 //
 
-#import "Song.h"
+#import "JTMSong.h"
 
-@implementation Song
+@implementation JTMSong
 
 - (instancetype)initWithTitle:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(int)rating
 {
