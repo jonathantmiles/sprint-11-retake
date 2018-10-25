@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JTMSong (NSJSONSerialization)
 
--(instancetype)initFromDictionary:(NSDictionary *)dictionary title:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(int)rating;
+-(instancetype)initFromDictionary:(NSDictionary *)dictionary;
 
 -(NSDictionary *)convertToDictionaryFromTitle:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(int)rating;
 
