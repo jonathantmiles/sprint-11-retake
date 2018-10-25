@@ -12,6 +12,8 @@
 
 @property (nonatomic) NSMutableArray *internalLyrics;
 
+@property NSFileManager *fileManager;
+
 @end
 
 @implementation JTMLyricController
@@ -21,6 +23,7 @@
     self = [super init];
     if (self) {
         _internalLyrics = [[NSMutableArray alloc] init];
+        _fileManager = [NSFileManager defaultManager];
     }
     return self;
 }
@@ -65,6 +68,17 @@
 {
     JTMSong *song = [[JTMSong alloc] initWithTitle:title artist:artist lyrics:lyrics rating:rating];
     [_internalLyrics addObject:song];
+    
+    NSURL *filePath = [[self.fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
+    NSDictionary *dictionary = [song convertToDictionaryFromTitle:title artist:artist lyrics:lyrics rating:rating];
+    [dictionary writeToURL:filePath atomically:YES];
+}
+
+- (void)loadLyrics
+{
+    NSURL *filePath = [[self.fileManager URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] firstObject];
+    NSString *stringPath = [[NSString alloc] init];
+    [self.fileManager contentsAtPath: stringPath];
 }
 
 -(NSArray *)lyrics

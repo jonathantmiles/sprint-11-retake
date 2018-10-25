@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "JTMSong.h"
+#import "JTMSong+NSJSONSerialization.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 // add saved lyric to array
 -(void)saveLyricWithTitle:(NSString *)title artist:(NSString *)artist lyrics:(NSString *)lyrics rating:(int)rating;
+
+-(void)loadLyrics;
 
 @end
 

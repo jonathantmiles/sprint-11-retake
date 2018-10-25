@@ -54,10 +54,10 @@
 		F85F75DF218184DB0042B10C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F8D3048A21801C5C009E4044 /* JTMSong.h */,
 				F8D3048B21801C5C009E4044 /* JTMSong.m */,
 				F8D3049021801F14009E4044 /* JTMSong+NSJSONSerialization.h */,
 				F8D3049121801F14009E4044 /* JTMSong+NSJSONSerialization.m */,
-				F8D3048A21801C5C009E4044 /* JTMSong.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
